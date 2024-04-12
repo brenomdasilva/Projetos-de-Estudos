@@ -1,0 +1,108 @@
+:root{
+    --primary-color: #3a68b7;
+}
+
+
+html{
+    background-color: var(--primary-color);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.field_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 1em ;
+    padding-top: .3em;
+    font-weight: 400;
+}
+
+.form_container{
+    /* background-color: white;  linha de baixo faz o papel do backgroud + border left de sombreamento*/
+    background-image: linear-gradient(to right, rgba(0,0,0,.3) .5rem, white .5rem);
+    max-width: 45em;
+    padding: 1em;
+}
+.main_field{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 35em;
+    gap: .25em;
+}
+
+label,input,textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.label_title{
+    text-transform: uppercase;
+}
+
+.label_input{
+    border: 1px solid transparent;
+    border-bottom-color: var(--primary-color);
+    padding: .5em;
+    margin: .5em 0 2.5em;
+    transition: padding-left .08s;
+}
+
+
+.bottom_section{
+    display: inline-block;
+    padding: 1em;
+}
+
+.reset_password{
+    margin-left: 7em;
+}
+
+.btn1{
+    background-color: var(--primary-color);
+    color: white;
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.link_cadastro{
+    color: var(--primary-color);
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+
+input:focus{
+    border: solid 1px var(--primary-color);
+    padding-left: .3rem;
+}
+
+input:invalid:focus{
+    outline: solid 1px var(--primary-color);
+}
+
+input:valid:focus{
+    outline: solid 1px var(--primary-color);
+    
+}

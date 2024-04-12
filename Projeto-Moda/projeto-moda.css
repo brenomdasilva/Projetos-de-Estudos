@@ -1,0 +1,110 @@
+:root{
+    --large-default-padding: 6.5em;
+    --medium-default-padding: 4em;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#principal{
+    width: 64em;
+    margin: 1.25em auto;
+}
+
+h1,h2{
+    font-family: 'Viaoda Libre', sans-serif;
+    font-weight: normal;
+
+}
+
+.header-top{
+    display: flex;
+    background-color: #162028;
+    justify-content: space-between;
+}
+.logo{
+    margin: .3em 0 .5em 8.4375em;
+    color: white;
+    font-size: 1.6rem;
+    
+}
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li{
+    list-style: none;
+    margin: 0 1em 0 0;
+    padding: 1em;
+    display: inline-block;
+}
+
+.list a{
+    text-decoration: none;
+    color: #425564;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    transition: color .3s linear;
+}
+.header-nav a:hover{
+    color: white;
+}
+.artigo1{
+    padding: var(--medium-default-padding) var(--large-default-padding);
+    text-align: center;
+}
+.artigo1-title{
+    font-size: 2rem;
+}
+.artigo1-desc{
+    font-size: 1rem;
+}
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.gallery-title{
+    text-align: center;
+    letter-spacing: .10rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.gallery p{
+    text-align: center;
+}
+.artigo2{
+    background-image: url(../projeto-moda/imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right end;
+    padding: 6rem;
+}
+.artigo2-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.artigo2 p{
+    color: white;
+    max-width: 70%;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer{
+    text-align: center;
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 1rem;
+    letter-spacing: .10rem;
+}
